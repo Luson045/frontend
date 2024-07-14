@@ -55,9 +55,7 @@ const Register = () => {
         const data = await response.json();
         if (response.ok) {
             notify(data.msg, "success");
-            const timeoutId = setTimeout(() => {
-                navigate("/");
-            }, 3000);
+            navigate("/");
         } else {
             notify(data.msg, "warning");
         }
