@@ -27,6 +27,14 @@ const Footer = () => {
                                 <li><a href="/terms">Terms</a></li>
                             </ul>
                         </div>
+                        <div className="col-sm-6 col-md-3 item">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><a href="mailto:lusonbasumatary17@gmail.com">Business</a></li>
+                                <li><a href="mailto:yuria4489@gmail.com">Customer Care</a></li>
+                                <li><a href="mailto:yuria4489@gmail.com">Join</a></li>
+                            </ul>
+                        </div>
                         <div className="col-md-6 item text">
                             <h3>DISCLAIMER</h3>
                             <p>"This platform is designed for educational purposes only. It provides tools and resources to learn about stock trading using virtual money[which cannot be used for anything else]. No real money is involved in the transactions on this platform, and users cannot make any real financial gains or losses. Please consult a professional financial advisor before making any real investments."</p>

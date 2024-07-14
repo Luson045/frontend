@@ -3,8 +3,7 @@ function getEnvironment() {
   const currentURL = window.location.href;
   const development = 'http://localhost:5000';
   const production = 'https://learn-stocks.onrender.com';
-  const nitjServer = '';
-  if (currentURL.includes('localhosp')) {
+  if (currentURL.includes('localhost')) {
     return development;
   } else {
     return production;
