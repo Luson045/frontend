@@ -42,14 +42,13 @@ const Footer = () => {
                             <br />
                         </div>
                         <div className="col item social">
-                            <h3>Follow us on</h3>
+                            <h3>Follow us on</h3><a href="https://www.instagram.com/_learnstocks_?igsh=MXYxNXhxMGlqcTh6dQ=="><FaInstagram /></a>
                             <a href="#"><FaFacebook /></a>
                             <a href="#"><FaTwitter /></a>
                             <a href="#"><FaLinkedin /></a>
-                            <a href="#"><FaInstagram /></a>
                         </div>
                     </div>
-                    <p className="copyright">Hello World © {currentYear}</p>
+                    <p className="copyright">Learn stocks © {currentYear}</p>
                 </div>
             </footer>
         </div>
