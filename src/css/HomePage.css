@@ -303,6 +303,50 @@ button[type="submit"]:hover {
   color: #ff7f00;
   font-weight: bold;
 }
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; /* Ensure it covers everything else */
+  display: flex;
+  justify-content: center;
+  align-items: center;/* Optional: darken the background */
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#bgVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Place the video behind other content */
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .background-video {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-video {
+      width: 100%;
+      height: auto;
+  }
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

@@ -172,6 +172,18 @@ const HomePage = () => {
     return (
         <>
             <Navbar />
+            {usercount === 0 && (
+                <div className="video-overlay">
+                      <video autoplay muted loop id="bgVideo">
+                        <source src="cover_back.mp4" type="video/mp4"/>
+                        Your browser does not support the video tag.
+                    </video>
+                    <video autoPlay loop muted className="background-video">
+                        <source src="cover.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            )}
             <div className="homepage">
                 {/* Hero Section */}
                 <section className="hero">
