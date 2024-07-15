@@ -54,8 +54,7 @@ const Register = () => {
         });
         const data = await response.json();
         if (response.ok) {
-            notify(data.msg, "success");
-            navigate("/");
+            notify("verification email sent to your email! Please check your email to continue.","success");
         } else {
             notify(data.msg, "warning");
         }
