@@ -27,7 +27,7 @@ const About = () => {
                 {/* Hero Section */}
                 <div className="about-hero">
                     <h1>About Us</h1>
-                    <p>Welcome to Stockx, your go-to platform for learning and trading stocks with virtual money. Our goal is to provide a comprehensive learning experience for everyone interested in the stock market, from beginners to experienced traders.</p>
+                    <p>Welcome to Learn Stocks, your go-to platform for learning and trading stocks with virtual money. Our goal is to provide a comprehensive learning experience for everyone interested in the stock market, from beginners to experienced traders.</p>
                 </div>
                 {/* Features Accordion Section */}
                 <div className="features-accordion">
@@ -54,7 +54,7 @@ const About = () => {
                     />
                     <div className="developer-info">
                         <h2>Developer Name</h2>
-                        <p>Hi, I'm Luson, the developer behind Stockx. With a passion for technology and finance, I created this platform to help others understand and navigate the stock market. Enjoy your learning journey!</p>
+                        <p>Hi, I'm Luson, the developer behind Learn Stocks. With a passion for technology and finance, I created this platform to help others understand and navigate the stock market. Enjoy your learning journey!</p>
                     </div>
                 </div>
             </div>
