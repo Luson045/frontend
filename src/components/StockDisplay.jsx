@@ -369,7 +369,8 @@ const StockDisplay = () => {
             </div>
             <div style={{ background: backgroundColor, padding: '20px', borderRadius: '10px', minHeight: '300px' }}>
             <ResponsiveContainer width="100%" height={isMobile ? 300 : '100%'} aspect={isMobile ? undefined : 3}>
-                <LineChart data={convertedData} 
+            <p>Time is in GMT</p>
+                <LineChart data={data} 
                     margin={{ right: isMobile ? 70 : 50, left: 20, top: 20, bottom: 20 }}>
                     <defs>
                         <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
