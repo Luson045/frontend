@@ -33,6 +33,7 @@ const Footer = () => {
                                 <li><a href="mailto:lusonbasumatary17@gmail.com">Business</a></li>
                                 <li><a href="mailto:yuria4489@gmail.com">Customer Care</a></li>
                                 <li><a href="mailto:yuria4489@gmail.com">Join</a></li>
+                                <li><a href="mailto:lusonbasumatary17@gmail.com.com">Support Us</a></li>
                             </ul>
                         </div>
                         <div className="col-md-6 item text">

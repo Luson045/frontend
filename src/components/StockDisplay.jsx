@@ -292,7 +292,7 @@ const StockDisplay = () => {
                 if (updatedData) {
                     setCurrent(updatedData);
                 }
-            }, 10000); // 300,000 ms = 5 minutes
+            }, 5000); // 300,000 ms = 5 minutes
 
             // Clear interval on component unmount or when current changes
             return () => clearInterval(interval);

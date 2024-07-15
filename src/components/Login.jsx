@@ -9,6 +9,7 @@ const Login = () => {
     const apiUrl = getEnvironment();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [isloading, setLoading] = useState(false);
     const navigate = useNavigate();
     const notify = (msg,type) => {
         if (type==="success"){
@@ -33,6 +34,7 @@ const Login = () => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
         const response = await fetch(`${apiUrl}/api/login`, {
             method: 'POST',
             headers: {
@@ -43,7 +45,8 @@ const Login = () => {
         const data = await response.json();
         if (response.ok) {
             notify("Login Successful","success")
-            localStorage.setItem('token', data.token); // Store the token in localStorage
+            localStorage.setItem('token', data.token);
+            setLoading(false); // Store the token in localStorage
             navigate('/profile');
         } else {
             notify(data.msg,"error");
@@ -71,7 +74,7 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                     required
                 />
-                <button type="submit">Login</button>
+                <button type="submit">{isloading?"Loading":"Login"}</button>
             </form>
             <p className="redirect">Dont have an account?<a href="/register">Sign up</a></p>
         </div>
