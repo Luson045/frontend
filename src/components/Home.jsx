@@ -122,22 +122,22 @@ const HomePage = () => {
     const reviews = [
         {
             id: 1,
-            name: 'John Doe',
-            review: 'This is an amazing platform! I learned so much about stock trading.',
+            name: 'JNerdy User',
+            review: 'Great Platform for beginners to learn stock trading. And the best part is it is free',
             rating: 5,
             avatar: 'https://via.placeholder.com/50', // Placeholder for user avatar
         },
         {
             id: 2,
-            name: 'Jane Smith',
-            review: 'Great tools and easy to use. Highly recommended for beginners!',
+            name: 'Another user',
+            review: 'Great Platform to begin from.',
             rating: 4,
             avatar: 'https://via.placeholder.com/50', // Placeholder for user avatar
         },
         {
             id: 3,
-            name: 'Sam Wilson',
-            review: 'A fantastic resource for learning and practicing trading strategies.',
+            name: 'Ranju Boro',
+            review: 'Very helpful for beginner.',
             rating: 5,
             avatar: 'https://via.placeholder.com/50', // Placeholder for user avatar
         },
